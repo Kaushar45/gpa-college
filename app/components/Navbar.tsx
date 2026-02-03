@@ -16,7 +16,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <div className="font-bold text-sm text-left">
+          <div className="hidden md:flex font-bold text-sm text-left">
             <Link href="/">
               <p>Babu Parasnath Maurya</p>
               <h6>Government Polytechnic Aurai Bhadohi Uttar Pradesh</h6>
@@ -25,7 +25,7 @@ export default function Navbar() {
         </div>
 
         {/* Right: Supporting Logos */}
-        <div className="flex items-center gap-4">
+        <div className="md:flex items-center gap-4 hidden ">
           <img
             src="https://www.gpaurai.ac.in/download.webp"
             alt="Government of India"
