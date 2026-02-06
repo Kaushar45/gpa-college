@@ -5,75 +5,162 @@ import {
   Mail,
   Phone,
   MapPin,
+  ExternalLink,
 } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 fixed bottom-0">
-      {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 sm:grid-cols-2 md:grid-cols-4">
-        {/* Brand */}
-        <div>
-          <h2 className="text-2xl font-bold text-white">
-            Government Polytechnic Aurai
-          </h2>
-          <p className="mt-4 text-sm leading-relaxed">
-            Empowering students with job-ready skills in Web, App & Emerging
-            Technologies.
-          </p>
-          <div className="flex gap-4 mt-4">
-            <Facebook className="hover:text-blue-500 cursor-pointer" />
-            <Instagram className="hover:text-pink-500 cursor-pointer" />
-            <Linkedin className="hover:text-blue-400 cursor-pointer" />
+    <>
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            {/* College Info */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center">
+                  <Link href="/">
+                    <img
+                      src="https://tse4.mm.bing.net/th/id/OIP.aNy5bthnT-AUuUUcPImdQgHaIA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                      alt="Government Polytechnic Aurai logo"
+                      className="w-full h-full object-cover "
+                    />
+                  </Link>
+                </div>
+                <div>
+                  <div className="font-bold text-lg leading-tight">
+                    GP Aurai
+                  </div>
+                  <div className="text-xs text-gray-400">Est. 2010</div>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm mb-4">
+                Babu Paras Nath Maurya Government Polytechnic Aurai - Excellence
+                in Technical Education
+              </p>
+              <div className="flex gap-3">
+                <span className="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">
+                  AICTE
+                </span>
+                <span className="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full">
+                  BTEUP
+                </span>
+              </div>
+            </div>
+
+            {/* Useful Links */}
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-white">
+                Useful Links
+              </h3>
+              <ul className="space-y-2">
+                {[
+                  "Register Yourself",
+                  "About us",
+                  "Placements",
+                  "Faculties",
+                  "E-Learning",
+                  "Departments",
+                ].map((link) => (
+                  <li key={link}>
+                    <a
+                      href="#"
+                      className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group"
+                    >
+                      <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full group-hover:bg-indigo-400 transition-colors" />
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Important Links */}
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-white">
+                Important Links
+              </h3>
+              <ul className="space-y-2">
+                {[
+                  { name: "JEECUP Portal", url: "http://jeecup.org/" },
+                  { name: "BTEUP Official", url: "http://bteup.ac.in/" },
+                  { name: "BTEUP Results", url: "http://upbte.in/" },
+                  {
+                    name: "Vidya Lakshmi",
+                    url: "https://www.vidyalakshmi.co.in/Students/",
+                  },
+                  { name: "DTE UP", url: "http://dte.up.nic.in/" },
+                ].map((link) => (
+                  <li key={link.name}>
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group"
+                    >
+                      <ExternalLink className="w-3 h-3 text-indigo-500 group-hover:text-indigo-400" />
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-white">
+                Contact Address
+              </h3>
+              <ul className="space-y-3 text-sm text-gray-400">
+                <li className="flex items-start gap-2">
+                  <MapPin className="w-4 h-4 text-indigo-500 flex-shrink-0 mt-1" />
+                  <span>NEAR UGAPUR MARKET, AURAI, BHADOHI-221301</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-indigo-500 flex-shrink-0" />
+                  <a
+                    href="mailto:principalgpaurai@gmail.com"
+                    className="hover:text-white transition-colors"
+                  >
+                    principalgpaurai@gmail.com
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-indigo-500 flex-shrink-0" />
+                  <a
+                    href="tel:+919451846978"
+                    className="hover:text-white transition-colors"
+                  >
+                    +91 9451846978
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <p>
+              ©2026 Babu Paras Nath Maurya Government Polytechnic Aurai. All
+              rights reserved
+            </p>
+            <p className="mt-2">
+              Privacy Policy | Terms of Use | Community guidelines
+            </p>
+            <p className="mt-2">
+              Website developed & maintained by{" "}
+              <a
+                href="https://www.inflection.org.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-400 hover:text-indigo-300"
+              >
+                Inflection ORG Pvt Ltd.
+              </a>
+            </p>
           </div>
         </div>
-
-        {/* Courses */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Courses</h3>
-          <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">Web Development</li>
-            <li className="hover:text-white cursor-pointer">App Development</li>
-            <li className="hover:text-white cursor-pointer">Data Science</li>
-            <li className="hover:text-white cursor-pointer">AI & ML</li>
-          </ul>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">About Us</li>
-            <li className="hover:text-white cursor-pointer">Admissions</li>
-            <li className="hover:text-white cursor-pointer">Placements</li>
-            <li className="hover:text-white cursor-pointer">Contact</li>
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-          <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-2">
-              <Phone size={16} /> +91 73551 92647
-            </li>
-            <li className="flex items-center gap-2">
-              <Mail size={16} /> principalgpaurai@gmail.com
-            </li>
-            <li className="flex items-center gap-2">
-              <MapPin size={16} />
-              NEAR UGAPUR MARKET,AURAI, BHADOHI-221301
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-700 text-center py-4 text-sm">
-        &copy; {new Date().getFullYear()} Government Polytechnic Aurai. All
-        rights reserved.
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 
