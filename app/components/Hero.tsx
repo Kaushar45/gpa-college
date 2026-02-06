@@ -282,7 +282,7 @@ export default function GPAuraiHomepage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Hero Slider with Parallax */}
       <section className="relative h-[500px] sm:h-[600px] overflow-hidden">
@@ -807,7 +807,6 @@ export default function GPAuraiHomepage() {
         </div>
       </section>
 
-      <Footer />
       {/* Custom Scrollbar Styles */}
       <style jsx global>{`
         .custom-scrollbar::-webkit-scrollbar {

@@ -1,13 +1,12 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-
-const layout = () => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="">
-      {" "}
-      <Navbar />{" "}
+    <div className="min-h-screen bg-gray-50">
+      {/* Navbar */}
+
+      {/* Page Content */}
+      <main>{children}</main>
     </div>
   );
 };
 
-export default layout;
+export default Layout;
