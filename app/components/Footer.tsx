@@ -22,21 +22,21 @@ const Footer = () => {
                   <Link href="/">
                     <img
                       src="https://tse4.mm.bing.net/th/id/OIP.aNy5bthnT-AUuUUcPImdQgHaIA?rs=1&pid=ImgDetMain&o=7&rm=3"
-                      alt="Government Polytechnic Aurai logo"
+                      alt="Government Polytechnic sonbhadra logo"
                       className="w-full h-full object-cover "
                     />
                   </Link>
                 </div>
                 <div>
                   <div className="font-bold text-lg leading-tight">
-                    GP Aurai
+                    GP sonbhadra
                   </div>
                   <div className="text-xs text-gray-400">Est. 2010</div>
                 </div>
               </div>
               <p className="text-gray-400 text-sm mb-4">
-                Babu Paras Nath Maurya Government Polytechnic Aurai - Excellence
-                in Technical Education
+                Babu Paras Nath Maurya Government Polytechnic sonbhadra -
+                Excellence in Technical Education
               </p>
               <div className="flex gap-3">
                 <span className="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">
@@ -114,15 +114,15 @@ const Footer = () => {
               <ul className="space-y-3 text-sm text-gray-400">
                 <li className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-indigo-500 flex-shrink-0 mt-1" />
-                  <span>NEAR UGAPUR MARKET, AURAI, BHADOHI-221301</span>
+                  <span>NEAR UGAPUR MARKET, sonbhadra, BHADOHI-221301</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-indigo-500 flex-shrink-0" />
                   <a
-                    href="mailto:principalgpaurai@gmail.com"
+                    href="mailto:principalgpsonbhadra@gmail.com"
                     className="hover:text-white transition-colors"
                   >
-                    principalgpaurai@gmail.com
+                    principalgpsonbhadra@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
@@ -140,7 +140,7 @@ const Footer = () => {
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
             <p>
-              ©2026 Babu Paras Nath Maurya Government Polytechnic Aurai. All
+              ©2026 Babu Paras Nath Maurya Government Polytechnic sonbhadra. All
               rights reserved
             </p>
             <p className="mt-2">

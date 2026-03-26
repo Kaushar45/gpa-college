@@ -79,7 +79,7 @@ export default function AboutPage() {
       year: "2010",
       title: "Establishment",
       description:
-        "Government Polytechnic Aurai established under BTEUP with AICTE approval",
+        "Government Polytechnic sonbhadra established under BTEUP with AICTE approval",
     },
     {
       year: "2011",
@@ -336,7 +336,7 @@ export default function AboutPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               Babu Paras Nath Maurya
               <br />
-              Government Polytechnic Aurai
+              Government Polytechnic sonbhadra
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
               Excellence in Technical Education Since 2010
@@ -379,7 +379,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   <strong>
-                    Babu Paras Nath Maurya Government Polytechnic Aurai
+                    Babu Paras Nath Maurya Government Polytechnic sonbhadra
                   </strong>
                   , located in Ugapur, Bhadohi, Uttar Pradesh, was established
                   in 2010 with a vision to provide quality technical education
@@ -400,9 +400,9 @@ export default function AboutPage() {
                 </p>
                 <p>
                   With state-of-the-art laboratories, a well-stocked library,
-                  hostel facilities, and a dedicated placement cell, GP Aurai
-                  has emerged as a preferred destination for technical education
-                  in the region.
+                  hostel facilities, and a dedicated placement cell, GP
+                  sonbhadra has emerged as a preferred destination for technical
+                  education in the region.
                 </p>
               </div>
             </motion.div>
@@ -452,7 +452,7 @@ export default function AboutPage() {
             className="text-center mb-12"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              GP Aurai in Numbers
+              GP sonbhadra in Numbers
             </h2>
             <p className="text-xl text-gray-600">
               Our journey of excellence reflected in achievements
@@ -695,7 +695,7 @@ export default function AboutPage() {
               Our Leadership
             </h2>
             <p className="text-xl text-gray-600">
-              Experienced educators guiding GP Aurai's vision
+              Experienced educators guiding GP sonbhadra's vision
             </p>
           </motion.div>
 
@@ -911,13 +911,14 @@ export default function AboutPage() {
                   <div>
                     <p className="font-semibold mb-1">Address</p>
                     <p className="text-white/80">
-                      Near Ugapur Market, Aurai, Bhadohi, Uttar Pradesh - 221301
+                      Near Ugapur Market, sonbhadra, Bhadohi, Uttar Pradesh -
+                      221301
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 flex-shrink-0" />
-                   <div>
+                  <div>
                     <p className="font-semibold mb-1">Phone</p>
                     <a
                       href="tel:+919451846978"
@@ -932,10 +933,10 @@ export default function AboutPage() {
                   <div>
                     <p className="font-semibold mb-1">Email</p>
                     <a
-                      href="mailto:principalgpaurai@gmail.com"
+                      href="mailto:principalgpsonbhadra@gmail.com"
                       className="text-white/80 hover:text-white"
                     >
-                      principalgpaurai@gmail.com
+                      principalgpsonbhadra@gmail.com
                     </a>
                   </div>
                 </div>

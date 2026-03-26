@@ -292,19 +292,19 @@ export default function StudentsPage() {
       title: "Principal & First Appellate Officer",
       contact: "S.P. Srivastava",
       phone: "+91 9451846978",
-      email: "principalgpaurai@gmail.com",
+      email: "principalgpsonbhadra@gmail.com",
     },
     {
       title: "Anti-Ragging Committee Head",
       contact: "Prof. Chandra Bhan Pal",
       phone: "+91 9451846978",
-      email: "principalgpaurai@gmail.com",
+      email: "principalgpsonbhadra@gmail.com",
     },
     {
       title: "Student Welfare Officer",
       contact: "Prof. P S Arya",
       phone: "+91 9451846978",
-      email: "principalgpaurai@gmail.com",
+      email: "principalgpsonbhadra@gmail.com",
     },
   ];
 
@@ -350,7 +350,8 @@ export default function StudentsPage() {
               Student Resources
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Everything you need for a successful academic journey at GP Aurai
+              Everything you need for a successful academic journey at GP
+              sonbhadra
             </p>
           </motion.div>
         </div>
@@ -412,8 +413,8 @@ export default function StudentsPage() {
                   Ragging is Strictly Prohibited
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  GP Aurai has ZERO TOLERANCE policy towards ragging. Any form
-                  of ragging is a punishable offense. Students can report
+                  GP sonbhadra has ZERO TOLERANCE policy towards ragging. Any
+                  form of ragging is a punishable offense. Students can report
                   incidents confidentially to the Anti-Ragging Committee.
                 </p>
                 <div className="flex flex-wrap gap-4">
@@ -846,7 +847,7 @@ export default function StudentsPage() {
               <div>
                 <p className="text-sm text-gray-400">Address</p>
                 <p className="font-semibold">
-                  Near Ugapur Market, Aurai, Bhadohi-221301
+                  Near Ugapur Market, sonbhadra, Bhadohi-221301
                 </p>
               </div>
             </div>
@@ -861,7 +862,7 @@ export default function StudentsPage() {
               <Mail className="w-6 h-6 text-indigo-400" />
               <div>
                 <p className="text-sm text-gray-400">Email</p>
-                <p className="font-semibold">principalgpaurai@gmail.com</p>
+                <p className="font-semibold">principalgpsonbhadra@gmail.com</p>
               </div>
             </div>
           </div>

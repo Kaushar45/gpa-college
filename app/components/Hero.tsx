@@ -801,7 +801,7 @@ export default function Homepage() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Begin Your Journey at GP Aurai
+            Begin Your Journey at GP sonbhadra
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}

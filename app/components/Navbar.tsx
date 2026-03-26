@@ -79,7 +79,7 @@ export default function Navbar() {
                 <Link href="/">
                   <img
                     src="https://www.gpsonbhadra.in/LOGO5.png"
-                    alt="Government Polytechnic Aurai logo"
+                    alt="Government Polytechnic sonbhadra logo"
                     className="w-full h-full object-cover"
                   />
                 </Link>

@@ -8,39 +8,39 @@ import "yet-another-react-lightbox/styles.css";
 
 const photos = [
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F3.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F3.webp&w=1920&q=75",
     span: "row-span-2",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F5.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F5.webp&w=1920&q=75",
     span: "row-span-2",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F6.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F6.webp&w=1920&q=75",
     span: "row-span-3",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F10.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F10.webp&w=1920&q=75",
     span: "row-span-2",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F13.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F13.webp&w=1920&q=75",
     span: "row-span-3",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F14.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F14.webp&w=1920&q=75",
     span: "row-span-2",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F16.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F16.webp&w=1920&q=75",
     span: "row-span-2",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F21.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F21.webp&w=1920&q=75",
     span: "row-span-3",
   },
   {
-    src: "https://www.gpaurai.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F23.webp&w=1920&q=75",
+    src: "https://www.gpsonbhadra.ac.in/_next/image?url=%2Fassets%2FcollageEvents%2F23.webp&w=1920&q=75",
     span: "row-span-2",
   },
   {
