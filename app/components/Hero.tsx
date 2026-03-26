@@ -64,7 +64,7 @@ interface Course {
   isLateral?: boolean;
 }
 
-export default function GPAuraiHomepage() {
+export default function Homepage() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [currentSlide, setCurrentSlide] = useState<number>(0);
@@ -96,9 +96,9 @@ export default function GPAuraiHomepage() {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1562774053-701939374585?w=1600&h=900&fit=crop",
-      title: "Welcome to GP Aurai",
+      title: "Welcome to Government Polytechnic Sonbhadra",
       description:
-        "Babu Paras Nath Maurya Government Polytechnic - Excellence in Technical Education",
+        "Government Polytechnic Sonbhadra - Excellence in Technical Education",
     },
     {
       id: 2,
@@ -192,44 +192,24 @@ export default function GPAuraiHomepage() {
   const courses: Course[] = [
     {
       code: "355",
-      name: "Computer Science and Engineering",
+      name: "Production",
       duration: "3 Years",
       icon: BookOpen,
       isLateral: false,
     },
-    {
-      code: "356",
-      name: "Information Technology",
-      duration: "3 Years",
-      icon: GraduationCap,
-      isLateral: false,
-    },
+
     {
       code: "330",
-      name: "Electronics Engineering",
+      name: "Electrical",
       duration: "3 Years",
       icon: Target,
       isLateral: false,
     },
     {
       code: "389",
-      name: "Computer Science and Engineering (Lateral Entry)",
-      duration: "2 Years",
+      name: "Chemical",
+      duration: "3 Years",
       icon: TrendingUp,
-      isLateral: true,
-    },
-    {
-      code: "390",
-      name: "Information Technology (Lateral Entry)",
-      duration: "2 Years",
-      icon: Lightbulb,
-      isLateral: true,
-    },
-    {
-      code: "380",
-      name: "Electronics Engineering (Lateral Entry)",
-      duration: "2 Years",
-      icon: Globe,
       isLateral: true,
     },
   ];
@@ -458,6 +438,62 @@ export default function GPAuraiHomepage() {
       {/* Main Content Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="w-full bg-white rounded-2xl shadow-xl border border-gray-100 p-6 flex flex-col lg:flex-row gap-18 mb-12">
+            {/* Left side: two images stacked vertically */}
+            <div className="flex flex-col gap-6 lg:w-1/3 items-center">
+              {/* Image 1 */}
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://www.gpsonbhadra.in/narendra.jpg"
+                  alt="Shri Narendra Bhooshan (IAS)"
+                  className="w-48 h-48 rounded-2xl object-cover shadow-xl border-4 border-indigo-100"
+                />
+                <h3 className="mt-4 text-lg font-bold text-gray-900 text-center">
+                  Shri Narendra Bhooshan (IAS)
+                </h3>
+                <p className="text-gray-600 text-center text-sm">
+                  Add. Chief Secretary, Technical Education, Uttar Pradesh
+                </p>
+              </div>
+
+              {/* Image 2 */}
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://www.gpsonbhadra.in/aziz.jpg"
+                  alt="Shri Aziz Ahmad"
+                  className="w-48 h-48 rounded-2xl object-cover shadow-xl border-4 border-indigo-100"
+                />
+                <h3 className="mt-4 text-lg font-bold text-gray-900 text-center">
+                  Shri Aziz Ahmad
+                </h3>
+                <p className="text-gray-600 text-center text-sm">
+                  Director, Directorate of Technical Education, Uttar Pradesh
+                </p>
+              </div>
+            </div>
+
+            {/* Right side: institute description */}
+            <div className="lg:w-2/3 flex flex-col ">
+              <div className="bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 px-6 py-4">
+                <h2 className="text-2xl font-bold text-white mb-4 ">
+                  GOVERNMENT POLYTECHNIC SONBHADRA
+                </h2>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                Government Polytechnic Sonbhadra, established in 2009, is a
+                renowned polytechnic institute in Uttar Pradesh. It is
+                affiliated with the Board of Technical Education, Uttar Pradesh
+                (BTEUP), Lucknow, and offers undergraduate diplomas in
+                Mechanical Production Engineering, Electrical Engineering and
+                Chemical Engineering. The institution is recognized as one of
+                the best government polytechnic institutes in Uttar Pradesh. In
+                addition to its academic programs, Government Polytechnic
+                Sonbhadra emphasizes co-curricular activities, including sports,
+                cultural events, and social service, fostering a well-rounded
+                educational experience for its students.
+              </p>
+            </div>
+          </div>
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Principal's Desk */}
             <motion.div
@@ -472,59 +508,58 @@ export default function GPAuraiHomepage() {
                   Principal's Desk
                 </h2>
               </div>
+
               <div className="p-6">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex-shrink-0">
                     <img
-                      src="https://www.gpaurai.ac.in/principal_photo.jpg"
+                      src="https://www.gpsonbhadra.in/pramod%20new.jpg"
                       alt="Principal"
                       className="w-48 h-48 rounded-2xl object-cover shadow-xl border-4 border-indigo-100"
                     />
                     <div className="mt-4 space-y-2">
                       <div className="flex items-center gap-2 px-4 py-2 bg-indigo-50 rounded-lg text-sm">
                         <Phone className="w-4 h-4 text-indigo-600" />
-                        <span className="text-gray-700">+91 9451846978</span>
+                        <span className="text-gray-700">+91 9451769783</span>
                       </div>
                       <div className="flex items-center gap-2 px-4 py-2 bg-indigo-50 rounded-lg text-sm">
                         <Mail className="w-4 h-4 text-indigo-600" />
                         <span className="text-gray-700">
-                          principalgpaurai@gmail.com
+                          gp.sonbhadra@gmail.com
                         </span>
                       </div>
                     </div>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                      S.P. Srivastava
+                      Pramod Kumar
                     </h3>
                     <p className="text-indigo-600 font-semibold mb-2">
-                      Principal, GP Aurai
-                    </p>
-                    <p className="text-sm text-gray-500 mb-4">
-                      जनसूचना अधिकारी / प्रथम अपीलीय अधिकारी
+                      Principal, Government Polytechnic Sonbhadra
                     </p>
 
                     <div className="prose prose-sm max-w-none">
                       <h4 className="text-lg font-bold text-gray-900 mb-3">
-                        Welcome to GP Aurai
+                        Welcome to Government Polytechnic Sonbhadra
                       </h4>
-                      <p className="text-gray-600 leading-relaxed mb-3">
-                        Welcome to Babu Paras Nath Maurya Government Polytechnic
-                        Aurai, Ugapur, Bhadohi (GP Aurai). Established in 2010,
-                        we are an AICTE-approved institution under the Board of
-                        Technical Education Uttar Pradesh (BTEUP).
-                      </p>
-                      <p className="text-gray-600 leading-relaxed mb-3">
-                        Our college offers three branches: Computer Science and
-                        Engineering, Information Technology, and Electronics
-                        Engineering, with admissions through JEECUP.
-                      </p>
+
                       <p className="text-gray-600 leading-relaxed mb-4">
-                        At Babu Paras Nath Maurya Government Polytechnic Aurai,
-                        we focus on providing quality technical education
-                        supported by experienced faculty and modern facilities.
-                        We aim to equip our students with the skills and
-                        knowledge needed for their professional growth.
+                        Education plays a key role in the overall development of
+                        the society. The role of education is definitely not
+                        limited to giving and grasping knowledge and theory. The
+                        true goal of education transcends much beyond just
+                        awarding degree and certificate to the students.The
+                        ultimate goal of education is the discovery of the
+                        meaning of life and the fulfillment of life and all
+                        mankind as well as for oneself. The quest of education
+                        is knowledge, humanity, culture, wisdom and sharpness
+                        but it should be noted that knowledge is not given but
+                        earned and character is not granted but cultivated. GPS
+                        not only focuses on the theoretical curriculum, but also
+                        help in the development of a student personality,
+                        extra-curricular activities and over all perspective.I
+                        wish all the students a grand sucess in their career and
+                        prosperity in their future life.
                       </p>
                     </div>
 

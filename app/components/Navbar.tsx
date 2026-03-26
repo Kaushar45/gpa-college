@@ -4,8 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Bell, ExternalLink, Menu, Mail, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import ApplicationForm from "../components/AplicationForm";
 
 export default function Navbar() {
+  const [showForm, setShowForm] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -17,6 +19,14 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (showForm) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showForm]);
 
   const menuItems = [
     { path: "/", name: "Home" },
@@ -37,11 +47,11 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5">
               <Phone className="w-3.5 h-3.5" />
-              +91 9451846978
+              +91 9451769783
             </span>
             <span className="hidden sm:flex items-center gap-1.5">
               <Mail className="w-3.5 h-3.5" />
-              principalgpaurai@gmail.com
+              gp.sonbhadra@gmail.com
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -65,21 +75,21 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-14 h-14 bg-gradient-to-br from-indigo-600 via-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+              <div className="w-14 h-14 bg-gradient-to-br from-indigo-600 via-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg overflow-hidden">
                 <Link href="/">
                   <img
-                    src="https://tse4.mm.bing.net/th/id/OIP.aNy5bthnT-AUuUUcPImdQgHaIA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    src="https://www.gpsonbhadra.in/LOGO5.png"
                     alt="Government Polytechnic Aurai logo"
                     className="w-full h-full object-cover"
                   />
                 </Link>
               </div>
               <div className="hidden sm:block">
-                <div className="font-bold text-indigo-900 text-lg leading-tight">
-                  Government Polytechnic Aurai
+                <div className="font-bold text-indigo-900 text-md leading-tight">
+                  Government Polytechnic Sonbhadra
                 </div>
                 <div className="text-xs text-gray-600">
-                  Bhadohi, Uttar Pradesh
+                  Sonbhadra, Uttar Pradesh
                 </div>
               </div>
             </div>
@@ -99,12 +109,12 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* CTA */}
             <div className="hidden lg:flex">
               <motion.button
+                onClick={() => setShowForm(true)}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white rounded-full font-semibold shadow-lg shadow-indigo-500/40"
+                className="px-3 py-1.5 bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white rounded-full font-semibold shadow-lg shadow-indigo-500/40"
               >
                 Apply Now
               </motion.button>
@@ -138,7 +148,13 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <button className="w-full mt-4 px-3 py-1.25 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-semibold">
+              <button
+                onClick={() => {
+                  setShowForm(true);
+                  setIsMenuOpen(false);
+                }}
+                className="w-full mt-4 px-3 py-1.25 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-semibold"
+              >
                 Apply Now
               </button>
             </motion.div>
@@ -167,6 +183,29 @@ export default function Navbar() {
           </a>
         </div>
       </div>
+
+      {showForm && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          {/* Click outside to close */}
+          <div
+            className="absolute inset-0"
+            onClick={() => setShowForm(false)}
+          />
+
+          {/* Modal Box */}
+          <div className="relative bg-white w-full max-w-2xl mx-4 rounded-2xl shadow-2xl p-6 z-10 animate-fadeIn">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowForm(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-xl"
+            >
+              ✕
+            </button>
+
+            <ApplicationForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
